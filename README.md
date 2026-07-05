@@ -34,7 +34,7 @@ Navigate to `localhost:3000` to view the server.
 
 Use `ctrl + c` to stop the server in the terminal.
 
-### Creating a Test Rooute
+### Creating a Test Route
 ```js
 app.get("/test", (req, res) => {
     res.send("<h1>This is a test route</h1>");
