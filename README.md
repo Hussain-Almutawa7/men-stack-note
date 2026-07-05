@@ -9,3 +9,22 @@
 | Update | `edit` | `GET` | Show a form to edit an existing item |
 | Update | `update` | `PUT` | Save changes to an existing item |
 | Delete | `delete` | `DELETE` | Remove an item from the database |
+
+## SETUP
+- Create a directory
+- Create server file `touch server.js`
+- Initialize a node project with `npm init -y`
+- Install express `npm i express`
+
+### Write Server Boilerplate
+
+server.js
+```js
+const express = require("express");
+
+const app = express();
+
+app.listen(3000, () => {
+    console.log("Listening on port 3000");
+});
+```
