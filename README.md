@@ -30,3 +30,6 @@ app.listen(3000, () => {
 
 Run the server with `nodemon server.js`
 
+Navigate to `localhost:3000` to view the server.
+
+Use `ctrl + c` to stop the server in the terminal.
