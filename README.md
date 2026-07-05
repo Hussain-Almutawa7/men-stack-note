@@ -41,3 +41,14 @@ app.get("/test", (req, res) => {
 });
 ```
 Navigate to `localhost:3000/test`
+
+### Using request paramaters
+
+```js
+app.get("/greet/:name", (req, res) => {
+    res.send(`Hello, <strong>${req.params.name.toUpperCase()}</strong>`);
+});
+```
+Navigate to `localhost:3000/greet/yourname`
+
+<img width="437" height="107" alt="image" src="https://github.com/user-attachments/assets/3e3d803c-8f4b-462b-aaea-6224127e8280" />
