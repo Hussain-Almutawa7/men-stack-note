@@ -64,3 +64,35 @@ app.get("/greet/:name", (req, res) => {
 Navigate to `localhost:3000/greet/yourname`
 
 <img width="437" height="107" alt="image" src="https://github.com/user-attachments/assets/3e3d803c-8f4b-462b-aaea-6224127e8280" />
+
+## Rendering EJS
+
+- Install ejs with `npm i ejs`
+- Create a `views` directory
+- Create an `.ejs` file like `home.ejs` inside it
+- Add html biolerplate with `!`
+
+home.ejs
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+    </head>
+    <body>
+        <h1>We are rendering and EJS page 🚀</h1>
+    </body>
+</html>
+```
+
+- Render `ejs` page using a controller like this one:
+
+```js
+app.get('/', (req, res) => {
+  res.render("home.ejs")
+});
+```
+<img width="706" height="177" alt="image" src="https://github.com/user-attachments/assets/1a324161-8b7b-4ea8-bfe7-ea20ce71f1d2" />
